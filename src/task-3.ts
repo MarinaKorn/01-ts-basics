@@ -1,19 +1,22 @@
+
+const usernames: string[] = ["alice", "bob", "charlie"];
+
+
+const ratings: number[] = [4.5, 3.8, 5];
+
+
 interface Product {
-  readonly id: number;
-  name: string;
-  price: number;
-  description?: string;
+  id: number;
+  title: string;
 }
 
-const usernames: string[] = ['Alice', 'Bob', 'Charlie'];
-const ratings: number[] = [5, 4, 3];
 
 const products: Product[] = [
-  { id: 1, name: 'Coffee', price: 2.5 },
-  { id: 2, name: 'Tea', price: 1.8, description: 'Green tea' },
-  { id: 3, name: 'Cookie', price: 1.2 }
+  { id: 1, title: "Phone" },
+  { id: 2, title: "Laptop" },
 ];
 
-console.log('Usernames:', usernames);
-console.log('Ratings:', ratings);
-console.log('Products:', products);
+
+console.log(`Usernames: ${JSON.stringify(usernames)}`);
+console.log(`Ratings: ${JSON.stringify(ratings)}`);
+console.log(`Products: ${JSON.stringify(products)}`);
